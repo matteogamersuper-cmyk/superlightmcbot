@@ -29,7 +29,7 @@ async function setupGuild(guild) {
 
     // Categoria "ticket"
     let categoria = guild.channels.cache.find(
-      (c) => c.type === ChannelType.GuildCategory && c.name.toLowerCase() === 'ticket'
+      (c) => c.type === ChannelType.GuildCategory && c.name.toLowerCase() === '⚙️ 𝐒𝐔𝐏𝐏𝐎𝐑𝐓𝐎'
     );
     if (!categoria) {
       categoria = await guild.channels.create({
@@ -40,7 +40,7 @@ async function setupGuild(guild) {
 
     // Canale "ticket"
     let canale = guild.channels.cache.find(
-      (c) => c.type === ChannelType.GuildText && c.name === 'ticket' && c.parentId === categoria.id
+      (c) => c.type === ChannelType.GuildText && c.name === '❓〢ᴀᴘʀɪ-ᴜɴ-ᴛɪᴄᴋᴇᴛ' && c.parentId === categoria.id
     );
     if (!canale) {
       canale = await guild.channels.create({
